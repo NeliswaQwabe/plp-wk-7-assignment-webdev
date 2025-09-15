@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS + JavaScript Animation Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Combining CSS Animations with JavaScript</h1>
+  </header>
+
+  <main>
+    <!-- Animate Box -->
+    <section>
+      <h2>Animate Box</h2>
+      <button class="btn" onclick="animateBox()">Animate!</button>
+      <div id="box" class="box"></div>
+    </section>
+
+    <!-- Card Flip -->
+    <section>
+      <h2>Card Flip</h2>
+      <div class="card-container" onclick="flipCard(this)">
+        <div class="card-flip">
+          <div class="front">Front</div>
+          <div class="back">Back</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Loading Spinner -->
+    <section>
+      <h2>Loading Animation</h2>
+      <button class="btn" onclick="toggleLoading()">Start/Stop Loading</button>
+      <div id="loader" class="loader"></div>
+    </section>
+
+    <!-- Popup Modal -->
+    <section>
+      <h2>Popup Modal</h2>
+      <button class="btn" onclick="openModal()">Open Modal</button>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <p>Hello! I slide in and fade out ✨</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Animation Demo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
